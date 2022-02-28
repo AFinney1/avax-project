@@ -1,0 +1,13 @@
+venv/
+/Lib
+lib/
+/Lib/
+/pandas/
+/C19v/
+/MLv/
+/key
+key/
+*key.txt
+*settings.json
+*avax_v2/
+*avax_v
