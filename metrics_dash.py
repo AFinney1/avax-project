@@ -5,13 +5,14 @@ from matplotlib.pyplot import figure
 import pandas as pd
 #adaimport plotly.express as px
 import plotly.graph_objects as go
+import plotly.io as pio
 
 app = dash.Dash()
 #crypto_name = input('Please enter the crypto/fiat pair of your choice: (ada/usd -> adausd): ')
 crypto_name = 'apeusd'
 
 
-ohlc_df = pd.read_csv('historical_price/' + crypto_name + '.csv')[:100]
+ohlc_df = pd.read_csv('historical_price/' + crypto_name + '.csv')[-1000:]
 ohlc_df.index = pd.to_datetime(ohlc_df['time'], unit = 'ms')
 #ohlc_df.index = ohlc_df.index.tz_localize('UTC').tz_convert('US/Eastern')
 
@@ -28,23 +29,24 @@ c = ohlc_df['close']
 l = ohlc_df['low']
 
 #ohlc_df.set_index('time', inplace=True)
+with open('LSTM_figures/test_predictions_'+crypto_name+'.json', 'r') as f:
+    fig2 = pio.read_json(f)
 
-fig = go.Figure(data=go.Ohlc(x=ohlc_df.index.tolist(),
-                                open=o,
-                                high=h,
-                                close=c,
-                                low=l,
-                                name='Crypto/Fiat Pair: ' + crypto_name)
-)
+with open('LSTM_figures/Forecast_'+crypto_name+'.json', 'r') as f:
+    fig3 = pio.read_json(f)
+
+
 
 
 app.layout = html.Div(children=[
-    html.H1(children='Crypto Metrics Dashboard'),
+    html.H1(children='Crypto Metrics and Forecasting Dashboard'),
     html.Div(children = '''
-        This is a dashboard for crypto metrics.
+        .
         '''),
 
-    dcc.Graph(figure = fig)    
+    ,
+    dcc.Graph(figure = fig2),
+    dcc.Graph(figure = fig3),
 
 
 ])
