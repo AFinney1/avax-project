@@ -12,8 +12,14 @@ app = dash.Dash(__name__, use_pages = True)
 crypto_name = 'apeusd'
 
 
+# colors = {
+#     'background': '#000000',
+#     'text': '#7FDBFF'
+# } style={'backgroundColor': colors['background']} 
 
-app.layout = html.Div([
+app.layout = html.Div(
+    children=
+    [
 	html.H1('Multi-page Crypto/Fiat Dashboard: Metrics and Forcasting'),
 
     html.Div(

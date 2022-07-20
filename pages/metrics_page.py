@@ -30,7 +30,8 @@ fig1 = go.Figure(data=go.Ohlc(x=ohlc_df.index.tolist(),
                                 high=h,
                                 close=c,
                                 low=l,
-                                name='Crypto/Fiat Pair: ' + crypto_name)
+                                name='Crypto/Fiat Pair: ' + crypto_name,
+                                )
 )
 
 
