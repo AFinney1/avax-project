@@ -35,10 +35,10 @@ fig1 = go.Figure(data=go.Ohlc(x=ohlc_df.index.tolist(),
 
 
 layout = html.Div(children=[
-    html.H1(children='This is our Home page'),
+    html.H1(children='Price Graphs'),
 
     html.Div(children='''
-        This is our Metrics page content.
+        The following figures depict information about the crypto/fiat pair of your choice.
     '''),
     dcc.Graph(figure = fig1)
 
