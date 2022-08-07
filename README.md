@@ -15,3 +15,11 @@ This repository contains a notebook (.ipynb) for tracking the price of the crypt
 Screenshot of the daily price history with the 30 day forecast after the black vertical line:
 
 ![screenshot](avax_plot_fcst.png)
+
+Screenshot of crypto price page:
+
+![screenshot](metrics.png)
+
+Screenshot of the attempted forecast page for the pytorch LSTM model:
+
+![Screenshot]()

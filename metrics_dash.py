@@ -38,4 +38,4 @@ app.layout = html.Div(
 
 
 
-app.run_server(debug=True)
+app.run_server()
