@@ -16,10 +16,10 @@ Screenshot of the daily price history with the 30 day forecast after the black v
 
 ![screenshot](avax_plot_fcst.png)
 
-Screenshot of crypto price page:
+Screenshot of crypto price page of dashboard:
 
 ![screenshot](metrics.png)
 
 Screenshot of the attempted forecast page for the pytorch LSTM model:
 
-![Screenshot]()
+![Screenshot](lstm_forecast.png)
