@@ -20,6 +20,6 @@ Screenshot of crypto price page of dashboard:
 
 ![screenshot](metrics.png)
 
-Screenshot of the attempted forecast page for the pytorch LSTM model:
+Screenshot of the dashboard's forecast page for the pytorch LSTM model:
 
 ![Screenshot](lstm_forecast.png)
