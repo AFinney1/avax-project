@@ -1,6 +1,6 @@
 # avax-project
 
-This repository contains a notebook (.ipynb) for tracking the price of the cryptocurrency AVAX of the Avalanche network.
+This repository Jupyter notebooks for tracking the price of the cryptocurrency AVAX of the Avalanche network. The original project was forecast_impl.ipynb.
 
 - Summary:
 ` - Predicting the price of commodities is a very valuable tool for investors, but it is not always possible to predict the price of a commodity in advance.
