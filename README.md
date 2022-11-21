@@ -3,7 +3,7 @@
 This is a repository of Jupyter notebooks for tracking the price of the cryptocurrency AVAX of the Avalanche network. The original project was forecast_impl.ipynb.
 
 - Summary:
-  - Predicting the price of commodities is a very valuable tool for investors, but it is not always possible to predict the price of a commodity in advance.
+  - Predicting the price of commodities is a very valuable tool for investors, but it is extremely difficult to predict the price of a commodity in advance.
    - The original goal of this project was to develop a model that could be used to predict the price of the cryptocurrency AVAX. 
      - Just by observation of the SARIMA Forecast plots, the forecasts performs better in earlier in the forecast than in the longterm.
      - Also by observation, the LSTM model performs better in the longterm than the SARIMA model.
